@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Science Facts for Kids</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', sans-serif;
+      background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    header, footer {
+      background-color: #00bcd4;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    nav {
+      background-color: #0288d1;
+      text-align: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 30px;
+      text-align: center;
+      animation: fadeIn 1s ease-in;
+    }
+
+    h2 {
+      color: #00796b;
+    }
+
+    table, th, td {
+      border: 1px solid #00acc1;
+      border-collapse: collapse;
+      padding: 10px;
+      margin: auto;
+    }
+
+    table {
+      background-color: #e0f2f1;
+      width: 80%;
+    }
+
+    img {
+      width: 250px;
+      border-radius: 10px;
+      margin: 15px auto;
+      display: block;
+      animation: zoomIn 1s;
+    }
+
+    button {
+      background-color: #ff9800;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      margin: 10px;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #f57c00;
+    }
+
+    .fact {
+      display: none;
+      margin: 10px 0;
+      color: #444;
+      font-size: 18px;
+    }
+
+    ul, ol {
+      text-align: left;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.5); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+  <script>
+    function showFacts() {
+      var facts = document.querySelectorAll(".fact");
+      facts.forEach(f => f.style.display = "block");
+    }
+
+    function hideFacts() {
+      var facts = document.querySelectorAll(".fact");
+      facts.forEach(f => f.style.display = "none");
+    }
+  </script>
+</head>
+<body>
+
+  <audio autoplay loop hidden>
+    <source src="https://www.bensound.com/bensound-music/bensound-sunny.mp3" type="audio/mp3">
+    Your browser does not support background music.
+  </audio>
+
+  <header>
+    <h1>🌟 Science Facts for Kids 🌟</h1>
+    <p>Fun + Learning = Awesome Science!</p>
+  </header>
+
+  <nav>
+    <a href="#facts">Facts</a>
+    <a href="#table">Table</a>
+    <a href="#lists">Lists</a>
+    <a href="#entities">Entities</a>
+    <a href="#images">Image</a>
+    <a href="#footer">Bookmark</a>
+  </nav>
+
+  <section id="facts">
+    <h2>🧠 Fun Facts</h2>
+    <button onclick="showFacts()">Show Facts</button>
+    <button onclick="hideFacts()">Hide Facts</button>
+
+    <p class="fact">🪐 Saturn could float in water – it's less dense than water!</p>
+    <p class="fact">🧊 Water expands when it freezes. That's why ice floats.</p>
+    <p class="fact">🧬 Your body is made up of about 37 trillion cells!</p>
+    <p class="fact">👶🦴 A baby has more bones than an adult!</p>
+    <p class="fact">🐶 dogs can smell much better than humans!</p>
+  </section>
+
+  <section id="table">
+    <table>
+      <caption><b>Interesting Science Facts for Kids</b></caption>
+  <thead>
+    <tr>
+      <th>Science Fact</th>
+      <th>Category</th>
+      <th>Fun Emoji</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Babies have around 300 bones at birth (more than adults)</td>
+      <td>Human Body</td>
+      <td>👶🦴</td>
+      <td>Babies’ bones fuse as they grow into adults.</td>
+    </tr>
+    <tr>
+      <td>Dogs can smell much better than humans</td>
+      <td>Animals</td>
+      <td>🐶👃✨</td>
+      <td>Dogs have a super powerful nose to detect scents.</td>
+    </tr>
+    <tr>
+      <td>Venus spins backwards compared to most planets</td>
+      <td>Space</td>
+      <td>♀️🔄</td>
+      <td>Venus rotates in the opposite direction.</td>
+    </tr>
+    <tr>
+      <td>Lightning is hotter than the sun</td>
+      <td>Weather</td>
+      <td>⚡☀️</td>
+      <td>Lightning can reach 30,000°C, hotter than the sun!</td>
+    </tr>
+    <tr>
+      <td>The Amazon Rainforest produces over 20% of the world's oxygen</td>
+      <td>Nature</td>
+      <td>🌳🌍</td>
+      <td>Plants in the rainforest make lots of oxygen.</td>
+    </tr>
+    <tr>
+      <td>The Eiffel Tower grows taller in summer</td>
+      <td>Science</td>
+      <td>🗼☀️</td>
+      <td>Heat causes the metal to expand and grow slightly.</td>
+    </tr>
+    <tr>
+      <td>Sharks have been around for 400 million years</td>
+      <td>Animals</td>
+      <td>🦈🌲</td>
+      <td>Sharks predate trees on Earth by millions of years.</td>
+    </tr>
+  </tbody>
+    </table>
+  </section>
+
+  <section id="lists">
+    <!-- Science Topics Ordered List (numbered) -->
+<h2>Top 5 Science Topics for Kids (Ordered List)</h2>
+<ol>
+  <li>Space and the Solar System</li>
+  <li>Plants and Trees</li>
+  <li>Animals and Habitats</li>
+  <li>The Human Body</li>
+  <li>Weather and Seasons</li>
+</ol>
+
+<!-- Science Topics Unordered List (bulleted) -->
+<h2>More Fun Science Topics (Unordered List)</h2>
+<ul>
+  <li>Dinosaurs</li>
+  <li>Magnets and Electricity</li>
+  <li>Simple Machines</li>
+  <li>Water Cycle</li>
+  <li>Insects and Bugs</li>
+</ul>
+
+  </section>
+
+  <section id="entities">
+    <h2>🔠 HTML Entities</h2>
+    <p>Special characters in HTML:</p>
+    <ul>
+      <li>&lt; means "less than"</li>
+      <li>&gt; means "greater than"</li>
+      <li>&amp; means "and"</li>
+      <li>&copy; means "copyright"</li>
+    </ul>
+    <p>Example: 5 &lt; 10 &amp; 10 &gt; 5 &copy; 2025</p>
+  </section>
+
+  <section id="images">
+    <h2>🌌 Our Solar System</h2>
+    <img src="c:\Users\LENOVO\Downloads\html\Planet_collage_to_scale_(captioned).jpg" alt="Solar System">
+  </section>
+
+  <footer id="footer">
+    <p>&copy; 2025 Science For Kids. Made with 💙 and curiosity!</p>
+  </footer>
+
+</body>
+</html>
+
